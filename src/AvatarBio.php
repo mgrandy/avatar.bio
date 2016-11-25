@@ -7,7 +7,7 @@ use Egulias\EmailValidator\Validation\RFCValidation;
 
 class AvatarBio {
 
-    private $url             = 'https://avatar.bio/avatar/';
+    private $url             = 'https://www.avatar.bio/avatar/';
     private $backGroundColor = 'DAF1FF';
     private $textColor       = '555555';
     private $text            = '';
