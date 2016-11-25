@@ -19,7 +19,8 @@ class AvatarBio {
         return $this->url;
     }
 
-    public function setEmail($email) {
+    public function setEmail($email)
+    {
 
         $validator = new EmailValidator();
         if ($validator->isValid($email, new RFCValidation())) {
@@ -30,39 +31,48 @@ class AvatarBio {
 
     }
 
-    public function getEmail() {
+    public function getEmail()
+    {
         return $this->email;
     }
 
-    public function setSize($size) {
+    public function setSize($size)
+    {
         $this->size = $size;
     }
 
-    public function getSize() {
+    public function getSize()
+    {
         return $this->size;
     }
 
-    public function getBackGroundColor() {
+    public function getBackGroundColor()
+    {
         return $this->backGroundColor;
     }
 
-    public function setBackGroundColor($color) {
+    public function setBackGroundColor($color)
+    {
         $this->backGroundColor = $color;
     }
 
-    public function getTextColor() {
+    public function getTextColor()
+    {
         return $this->textColor;
     }
 
-    public function setTextColor($color) {
+    public function setTextColor($color)
+    {
         $this->textColor = $color;
     }
 
-    public function setText($text) {
+    public function setText($text)
+    {
         $this->text = $text;
     }
 
-    public function getText() {
+    public function getText()
+    {
         return $this->text;
     }
 
@@ -71,7 +81,8 @@ class AvatarBio {
      *
      * @return string The URL of the avatar
      */
-    public function getImageURL() {
+    public function getImageURL()
+    {
         if ($this->getEmail() == '') {
             throw new \Exception('No email address has been provided');
         }
